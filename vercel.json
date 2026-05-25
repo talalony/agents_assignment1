@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "agent.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "agent.py"
+    }
+  ]
+}
